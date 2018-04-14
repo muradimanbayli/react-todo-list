@@ -1,0 +1,82 @@
+ul{
+  list-style-type: none;
+}
+ul,li{
+  padding: 0px;
+  margin: 0px;
+}
+.todo-list{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.todo-list li{
+  border-bottom: 1px solid black;
+}
+.todo-list li:last-child{
+  border-bottom: none;
+}
+body{
+  background-color: rgb(237, 237, 237);
+}
+#root{
+  width: 600px;
+  margin: 0 auto;
+}
+div.text{
+  float: left;
+  width: 80%;
+  height: 40px;
+  line-height: 36px;
+}
+div.status{
+  float:left;
+  width: 10%;
+  height: 40px;
+}
+div.action{
+  float:left;
+  width: 10%;
+  text-align: center ;
+}
+div.action img{
+  cursor: pointer;
+}
+.uncompleted{
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  display: block;
+  border-radius: 15px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.completed{
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  display: block;
+  border-radius: 15px;
+  margin: 10px auto;
+  background-color: grey;
+  cursor: pointer;
+}
+div.add-element{
+  background-color: white;
+  border-radius: 5px;
+}
+div.add-element input[type='text']{
+  border: none;
+  width: 550px;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+}
+div.add-element input[type='button']{
+
+}
+.clear{
+  clear:both;
+}
