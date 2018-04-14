@@ -19,6 +19,11 @@ class TodoElement extends React.Component{
       this.handler = this.handler.bind(this);
       this.state = {name : this.props.todoName};
       this.setStatus = this.setStatus.bind(this);
+
+    }
+
+    componentWillReceiveProps(){
+      this.setState({ name: this.props.todoName });
     }
 
     editElement(){
@@ -174,8 +179,8 @@ class App extends React.Component {
   }
 
   edit(index){
-    console.log(this.state.tasks);
-    let temp=this.state.tasks;
+    console.log(index);
+    let temp=this.state.tasks; console.log(temp[index]);
     temp[index].isEdit = true;
     this.setState({tasks:temp});
   }
